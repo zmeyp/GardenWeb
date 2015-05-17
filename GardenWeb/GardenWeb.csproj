@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>f0ed7f36</NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/824ae3c8-f5ad-46a7-bbbf-ab40fe3cf878/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/GardenWeb</ApplicationInsightsResourceId>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -498,6 +499,7 @@
     <Content Include="Content\less\variables.less" />
     <Content Include="Content\less\widgets.less" />
     <Content Include="Content\masterslider\desktop.ini" />
+    <None Include="Properties\PublishProfiles\GardenWeb.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\coming-soon.js" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
