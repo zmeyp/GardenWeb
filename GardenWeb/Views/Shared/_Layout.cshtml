@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <meta name="description" content="Responsive HTML5 E-Commerce Template" />
+    <meta name="keywords" content="responsive html5 template, e-commerce, shop, bootstrap 3.0, css, jquery, flat, modern" />
+    <meta name="author" content="8Guild" />
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!--Adding Media Queries Support for IE8-->
+    <!--[if lt IE 9]>
+      <script src="/Scripts/plugins/respond.js"></script>
+    <![endif]-->
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!--Master Slider Styles-->
+    <link href="/Content/masterslider/style/masterslider.css" rel="stylesheet" media="screen">
+    <!--Styles-->
+    <link href="/Content/css/styles.css" rel="stylesheet" media="screen">
+
+</head>
+<body>
+
+    @RenderPage("/Views/Shared/_LoginModal.cshtml")
+
+    @RenderPage("/Views/Shared/_Header.cshtml")
+
+    @RenderBody()
+
+    @RenderPage("/Views/Shared/_StickyButtons.cshtml")
+
+    @RenderPage("/Views/Shared/_Subscription.cshtml")
+
+    @RenderPage("/Views/Shared/_Footer.cshtml")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @Scripts.Render("/Scripts/plugins/smoothscroll.js")
+    @Scripts.Render("/Scripts/plugins/jquery.validate.min.js")
+    @Scripts.Render("/Scripts/plugins/icheck.min.js")
+    @Scripts.Render("/Scripts/plugins/jquery.placeholder.js")
+    @Scripts.Render("/Scripts/plugins/jquery.stellar.min.js")
+    @Scripts.Render("/Scripts/plugins/jquery.touchSwipe.min.js")
+    @Scripts.Render("/Scripts/plugins/jquery.shuffle.min.js")
+    @Scripts.Render("/Scripts/plugins/lightGallery.min.js")
+    @Scripts.Render("/Scripts/plugins/owl.carousel.min.js")
+    @Scripts.Render("/Scripts/plugins/masterslider.min.js")
+    @Scripts.Render("/Scripts/mailer/mailer.js")
+    @Scripts.Render("/Scripts/scripts.js")
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
