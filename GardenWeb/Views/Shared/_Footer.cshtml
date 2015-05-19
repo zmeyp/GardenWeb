@@ -1,11 +1,18 @@
-﻿<!--Footer-->
+﻿@using GardenWeb.Data
+@model Address
+
+@{
+    var address = Model ?? new Address();
+}
+
+<!--Footer-->
 <footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-5">
                 <div class="info">
                     <a class="logo" href="index.html"><img src="/Content/img/logo-footer.png" alt="Limo" /></a>
-                    <p>Describe the mission of your online store and the advantages a customer can get once he makes a purchase. If you have something to tell let customers know about it.</p>
+                    <p>@address.AddressLine1</p>
                     <div class="social">
                         <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
                         <a href="#" target="_blank"><i class="fa fa-youtube-square"></i></a>

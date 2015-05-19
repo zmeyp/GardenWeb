@@ -29,16 +29,12 @@
 <body>
 
     @RenderPage("/Views/Shared/_LoginModal.cshtml")
-
     @RenderPage("/Views/Shared/_Header.cshtml")
-
     @RenderBody()
-
     @RenderPage("/Views/Shared/_StickyButtons.cshtml")
-
     @RenderPage("/Views/Shared/_Subscription.cshtml")
 
-    @RenderPage("/Views/Shared/_Footer.cshtml")
+    <span id="footer"></span>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
@@ -55,8 +51,16 @@
     @Scripts.Render("/Scripts/plugins/masterslider.min.js")
     @Scripts.Render("/Scripts/mailer/mailer.js")
     @Scripts.Render("/Scripts/scripts.js")
+    @Scripts.Render("/Scripts/helperj.js")
 
-    @RenderSection("scripts", required: false)
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        populateTag("/Home/GetFooterTask", "footer");
+    });
+</script>
+
+@RenderSection("scripts", required: false)
 
 </body>
 </html>

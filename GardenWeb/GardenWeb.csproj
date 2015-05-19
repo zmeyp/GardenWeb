@@ -220,6 +220,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Data\Address.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Data\Category.cs" />
@@ -228,9 +229,12 @@
     <Compile Include="Data\ProductContext.cs" />
     <Compile Include="Data\ProductRepository.cs" />
     <Compile Include="Data\ProductsMigrationConfiguration.cs" />
+    <Compile Include="Data\ShoppingCartItem.cs" />
+    <Compile Include="Data\SubCategory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GlobalVariables.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -503,6 +507,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\coming-soon.js" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
+    <Content Include="Scripts\helperj.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -578,6 +583,15 @@
     <Content Include="Views\Shared\_LoginModal.cshtml" />
     <Content Include="Views\Shared\_StickyButtons.cshtml" />
     <Content Include="Views\Shared\_Subscription.cshtml" />
+    <Content Include="Views\Shared\_Brands.cshtml" />
+    <Content Include="Views\Shared\_Galery.cshtml" />
+    <Content Include="Views\Shared\_LatestsPosts.cshtml" />
+    <Content Include="Views\Shared\_BrowseCategories.cshtml" />
+    <Content Include="Views\Shared\_BestsellingItems.cshtml" />
+    <Content Include="Views\Shared\_CatalogPicks.cshtml" />
+    <Content Include="Views\Shared\_MasterSlider.cshtml" />
+    <Content Include="Views\Shared\_MainMenu.cshtml" />
+    <Content Include="Views\Shared\_ShoppingCart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
